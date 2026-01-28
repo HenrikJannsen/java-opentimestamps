@@ -12,7 +12,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 
-import static org.bitcoinj.core.Utils.toBytes;
+import static com.eternitywall.ots.Utils.toBytes;
 import static org.junit.Assert.assertArrayEquals;
 
 public class TestPendingAttestation {

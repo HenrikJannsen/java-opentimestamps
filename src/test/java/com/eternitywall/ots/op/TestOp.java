@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import javax.xml.bind.DatatypeConverter;
 
-import static org.bitcoinj.core.Utils.toBytes;
+import static com.eternitywall.ots.Utils.toBytes;
 import static org.junit.Assert.*;
 
 public class TestOp {

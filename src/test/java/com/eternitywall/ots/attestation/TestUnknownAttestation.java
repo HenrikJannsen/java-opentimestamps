@@ -11,7 +11,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-import static org.bitcoinj.core.Utils.toBytes;
+import static com.eternitywall.ots.Utils.toBytes;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 

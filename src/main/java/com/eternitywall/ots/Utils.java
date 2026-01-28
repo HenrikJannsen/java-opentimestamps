@@ -176,6 +176,25 @@ public class Utils {
     }
 
     /**
+     * Encodes the given string into a sequence of bytes using the named charset.
+     * <p>
+     * This is a convenience method which wraps the checked exception with a RuntimeException.
+     * The exception can never occur given the charsets
+     * US-ASCII, ISO-8859-1, UTF-8, UTF-16, UTF-16LE or UTF-16BE.
+     *
+     * @param str the string to encode into bytes
+     * @param charsetName the name of a supported {@linkplain java.nio.charset.Charset charset}
+     * @return the encoded bytes
+     */
+    public static byte[] toBytes(CharSequence str, String charsetName) {
+        try {
+            return str.toString().getBytes(charsetName);
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
      * Returns a string with the first letter uppercase.
      *
      * @param string the string to get its first character converted to uppercase
