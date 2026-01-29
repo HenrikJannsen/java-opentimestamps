@@ -79,9 +79,9 @@
             <version>1.4</version>
         </dependency>
         <dependency>
-            <groupId>com.github.bisq-network</groupId>
-            <artifactId>bitcoinj</artifactId>
-            <version>7dc0851a807857ba19f76824e48d75ab0390eca7</version>
+            <groupId>org.bitcoinj</groupId>
+            <artifactId>bitcoinj-core</artifactId>
+            <version>0.14.7</version>
             <scope>compile</scope>
             <exclusions>
                 <exclusion>
