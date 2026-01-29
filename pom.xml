@@ -6,7 +6,7 @@
 
     <groupId>com.github.HenrikJannsen</groupId>
     <artifactId>java-opentimestamps</artifactId>
-    <version>1.21</version>
+    <version>1.22</version>
 
     <name>java-opentimestamps</name>
     <description>The java implementation of the OpenTimestamps protocol</description>
@@ -53,6 +53,13 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -72,9 +79,9 @@
             <version>1.4</version>
         </dependency>
         <dependency>
-            <groupId>org.bitcoinj</groupId>
-            <artifactId>bitcoinj-core</artifactId>
-            <version>0.16.3</version>
+            <groupId>com.github.bisq-network</groupId>
+            <artifactId>bitcoinj</artifactId>
+            <version>7dc0851a807857ba19f76824e48d75ab0390eca7</version>
             <scope>compile</scope>
             <exclusions>
                 <exclusion>
@@ -87,8 +94,9 @@
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
-            <version>3.25.8</version>
+            <version>3.19.1</version>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
